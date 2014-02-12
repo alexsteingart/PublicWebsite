@@ -103,7 +103,8 @@ h3{
 }
 
 #about {
-	background:#fff;
+	background:#333;
+	color: white;
 }
 
 #team {
