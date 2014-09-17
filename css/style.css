@@ -407,7 +407,7 @@ ul.dropdown-menu>li>a:hover {
 	margin: 0px 15px 0 0;
 }
 .carousel-caption {
-	top: 50%;
+	top: 34%;
 	margin-top: -250px;
 	font-size: 24px;
 	text-align: left;
@@ -494,9 +494,9 @@ ul.dropdown-menu>li>a:hover {
 	margin: 0;
 }
 .titles.services {
-	background: url('../images/image_1920x1000.jpg') no-repeat;
+	background: url('../images/line_bg.jpg') no-repeat;
  // background-size:100% 100%;
-	
+
 	background-origin: initial;
 	background-clip: initial;
 	background-size: cover;
@@ -506,7 +506,7 @@ ul.dropdown-menu>li>a:hover {
 	color: #fff;
 }
 .titles.aboutus {
-	background: url('../images/image_1920x1000.jpg') no-repeat;
+	background: url('../images/line_bg2.jpg') no-repeat;
  // background-size:100% 100%;
 	background-origin: initial;
 	background-clip: initial;
@@ -517,7 +517,7 @@ ul.dropdown-menu>li>a:hover {
 	color: #fff;
 }
 .titles.blog {
-	background: url('../images/image_1920x1000_blk.jpg') no-repeat;
+	background: url('../images/line_bg3.jpg') no-repeat;
  // background-size:100% 100%;
 	background-attachment: fixed;
 	background-origin: initial;
@@ -531,7 +531,7 @@ ul.dropdown-menu>li>a:hover {
 .row.nice__title {
 	background: url('../images/pattern.png') repeat;
  // background-size:100% 100%;
-	
+
 	background-origin: initial;
 	background-clip: initial;
 	background-size: cover;
@@ -565,7 +565,7 @@ ul.dropdown-menu>li>a:hover {
 }
 .homepage {
 	position: relative;
-	margin-top: 50%;
+	margin-top: 60%;
 	z-index: 111;
 	background: #fff;
 }
@@ -600,7 +600,7 @@ p.big-paragraph {
 	width: 100%;
 	margin: 0;
 	padding: 55px 0 75px 0;
-	background: url('../images/image_1920x1000.jpg') no-repeat;
+	background: url('../images/big_line_bg.jpg') no-repeat;
 	background-origin: initial;
 	background-clip: initial;
 	background-size: cover;
@@ -1028,6 +1028,12 @@ footer button.btn-primary:focus {
 	padding-left: 0px !important;
 	padding-right: 0px !important;
 }
+.carousel-caption .logo {
+	height: 240px;
+}
+.mobile-subtitle{
+	display: none;
+}
  @media(max-width:1600px) {
 .carousel-caption h1 {
 	font-size: 40px;
@@ -1038,7 +1044,7 @@ footer button.btn-primary:focus {
 @media(max-width:1310px) {
 .carousel-caption {
 	font-size: 14px;
-	top: 55%;
+	top: 41%;
 }
 .carousel-caption h1 {
 	font-size: 30px;
@@ -1063,7 +1069,7 @@ footer button.btn-primary:focus {
 }
 .carousel-caption {
 	font-size: 13px;
-	top: 50%;
+	top: 34%;
 	margin-top: -110px;
 	left: 15%;
 	right: 15%;
@@ -1097,7 +1103,7 @@ footer button.btn-primary:focus {
 	margin-top: -27px;
 }
 .boxess .carousel-caption {
-	top: 50%;
+	top: 34%;
 	margin-top: -80px;
 }
 .navbar-default .navbar-nav>li {
@@ -1196,15 +1202,33 @@ header.with-boxed {
 .three-blocks {
 	background-size: 100% 100%;
 }
+.carousel-caption .logo{
+	display: none;
+}
+.carousel-caption h1{
+	line-height: 20px;
+
+}
 }
 @media(max-width:600px) {
 .slider .btn {
 	display: none;
 }
 }
+@media(max-width:550px) {
+.carousel-caption h1 {
+	display: none;
+}
+.carousel-caption p{
+	margin-top: 20px !important;
+}
+}
 @media(max-width:440px) {
 .carousel-caption {
 	display: none;
+}
+.mobile-subtitle{
+	display: block;
 }
 }
 .carousel-fade {
@@ -1498,6 +1522,14 @@ a.submenu:hover {
 	font-size: 11px;
 }
 }
+@media(max-width: 845px) {
+	.carousel-caption .logo{
+		height: 200px;
+	}
+	.homepage{
+		margin-top: 62%;
+	}
+}
 @media only screen and (max-width: 767px) {
 a.submenu {
 	display: block;
@@ -1563,8 +1595,11 @@ h1.page_title {
 	font-size: 30px;
 	line-height: normal;
 }
+.carousel-caption .logo{
+	height: 165px;
+}
 .homepage {
-	margin-top: 65%;
+	margin-top: 63%;
 }
 .carousel-control span {
 	margin-top: -40px;
@@ -1606,7 +1641,7 @@ h1.page_title {
 	display: block !important;
 }
 .carousel-caption {
-	top: 40%;
+	top: 90px;
 }
 .carousel-caption a.btn {
 	display: none;
@@ -1728,4 +1763,18 @@ h1.page_title {
 	margin: 0;
 	padding: 0;
 	width: 100%
+}
+
+.carousel-caption h1 {
+	padding-top: 0px;
+	margin-top: 0px;
+	color: #333;
+	text-transform: none;
+	padding-bottom: 15px;
+}
+.carousel-caption p {
+	margin-top: 0px;
+	color: #333;
+	padding: 0px;
+	width: 60%
 }
