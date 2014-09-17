@@ -1060,6 +1060,12 @@ footer button.btn-primary:focus {
 	margin-left: 10px;
 }
 }
+@media(max-width:1200px) {
+  .col-md-4.middle h3{
+    margin-bottom:16px;
+    background-position: left top !important;
+  }
+}
 @media(max-width:990px) {
 .main__middle__container h3.heading.white {
 	background: none;
