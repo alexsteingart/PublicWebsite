@@ -1778,3 +1778,20 @@ h1.page_title {
 	padding: 0px;
 	width: 60%
 }
+.contact-info{
+	color: black;
+}
+.contact-info a{
+	font-weight: bold;
+}
+.contact-info label{
+	width: 121px;
+	padding-right: 11px;
+	text-align:right;
+}
+.contact-info .info{
+	margin-left: 124px;
+}
+.contact-info .btn#mc-embedded-subscribe{
+	margin-left:124px;
+}
