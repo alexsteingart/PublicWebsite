@@ -391,7 +391,7 @@ ul.dropdown-menu>li>a:hover {
 /*Carousel*/
 .slider {
 	position: fixed;
-	top: 80px;
+	top: 0px;
 	height: 100%;
 	width: 100%;
 	z-index: 5;
@@ -565,7 +565,7 @@ ul.dropdown-menu>li>a:hover {
 }
 .homepage {
 	position: relative;
-	margin-top: 60%;
+	margin-top: 52%;
 	z-index: 111;
 	background: #fff;
 }
@@ -600,7 +600,7 @@ p.big-paragraph {
 	width: 100%;
 	margin: 0;
 	padding: 55px 0 75px 0;
-	background: url('../images/big_line_bg.jpg') no-repeat;
+	background: url('../images/pp_bg.png') no-repeat;
 	background-origin: initial;
 	background-clip: initial;
 	background-size: cover;
@@ -612,6 +612,7 @@ p.big-paragraph {
 }
 .line__bg h3 {
 	margin-bottom: 0px;
+	margin-top: 0px;
 }
 .testimonials p {
 	color: #333;
@@ -737,6 +738,7 @@ img.full-width {
 	margin: 0;
 	margin-bottom: 20px;
 	height: auto;
+	margin-top: 20px;
 }
 .grey-info-block p.small-paragraph {
 	padding: 0px 0 30px 0;
@@ -1033,6 +1035,9 @@ footer button.btn-primary:focus {
 }
 .mobile-subtitle{
 	display: none;
+}
+input, textarea{
+	width: 200px;
 }
  @media(max-width:1600px) {
 .carousel-caption h1 {
@@ -1532,9 +1537,7 @@ a.submenu:hover {
 	.carousel-caption .logo{
 		height: 200px;
 	}
-	.homepage{
-		margin-top: 62%;
-	}
+
 }
 @media only screen and (max-width: 767px) {
 a.submenu {
@@ -1604,9 +1607,7 @@ h1.page_title {
 .carousel-caption .logo{
 	height: 165px;
 }
-.homepage {
-	margin-top: 63%;
-}
+
 .carousel-control span {
 	margin-top: -40px;
 }
@@ -1619,6 +1620,9 @@ h1.page_title {
 }
 }
 @media(min-width:768px) and (max-width:991px) {
+.grey-info-block .grey-info-block-second-p {
+	margin-bottom: 39px;
+}
 #portfolio ul#Grid a.link {
 	font-size: 18px;
 }
@@ -1790,13 +1794,19 @@ h1.page_title {
 .contact-info a{
 	font-weight: bold;
 }
+.contact-info .mc-field-group{
+	margin-bottom:10px;
+}
 .contact-info label{
-	width: 121px;
-	padding-right: 11px;
+	width: 126px;
+	padding-right: 16px;
 	text-align:right;
 }
+.contact-info label .asterisk{
+	margin-right:-11px;
+}
 .contact-info .info{
-	margin-left: 124px;
+	margin-left: 129px;
 }
 .contact-info .btn#mc-embedded-subscribe{
 	margin-left:124px;

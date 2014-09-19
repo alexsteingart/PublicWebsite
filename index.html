@@ -7,7 +7,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
-<link href="css/style.css" rel="stylesheet">
+<link href="css/style.css?20140918" rel="stylesheet">
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -16,7 +16,7 @@
         <![endif]-->
 </head>
 <body>
-<header class="main__header">
+<header class="main__header" style='display:none;'>
   <div class="container">
     <nav class="navbar navbar-default" role="navigation">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -90,7 +90,7 @@
 </section>
 <!--end of slider section-->
 <section class="main__middle__container homepage">
-  <div class="row  text-left headings no-margin nothing">
+  <div class="row  text-left headings no-margin nothing" style="display:none;">
     <div class="container">
       <div class='mobile-subtitle'>
       <h1 class="page_title ">
@@ -118,25 +118,29 @@
   </div>
   <div class="row three__blocks  text-left no_padding no-margin">
     <div class="container">
-      <div class="col-md-4">
-        <h3>Apparel<span class="small-paragraph" >&nbsp;</span></h3>
+      <h3>Marketplaces</h3>
+      <div class="col-md-3">
+        <img src="images/content__images/marketplace.jpg" alt="image" class="img-responsive img-rounded">
+        <p>Allow your users to buy and sell products to and from each other.
+       </p>
+
+      </div>
+      <div class="col-md-3">
         <img src="images/content__images/img1.jpg" alt="image" class="img-responsive img-rounded">
-        <p>We empower brands to recapture their 52 billion dollar secondary market while encouraging users to sell and buy products that are relevant to particular brand narratives, without taking on any inventory or operational risk.<br><a href='mailto:apparel@pickipicki.com' >apparel@pickipicki.com</a>
+        <p>Merchandise that relates and encourages your brand's narrative.
 			 </p>
 
       </div>
-      <div class="col-md-4 middle">
-        <h3 style="">Consumer Electronics<span class="small-paragraph">&nbsp;</span></h3>
+      <div class="col-md-3 middle">
         <img src="images/content__images/img2.jpg" alt="image" class="img-responsive img-rounded">
-        <p>Brands like Apple, Sears, and Gamestop have all participated in the redistribution of their secondary product and brand relevant product.  This 20.4 Billion dollar market is now available to all brands with our turn-key marketplace solution.<br><a href='mailto:ce@pickipicki.com'>ce@pickipicki.com</a>
+        <p>Second hand merchandise, allowing you, the brand, to make a profit off of the full retail life cycle of your product, long after it leaves your shelves.
 			</p>
 
       </div>
-      <div class="col-md-4">
-        <h3>Luxury<span class="small-paragraph">&nbsp;</span></h3>
+      <div class="col-md-3">
         <img src="images/content__images/img3.jpg" alt="image" class="img-responsive img-rounded">
-        <p>Luxury deserves unique attention due to the sensitivities of both the brand and market. We work to develop the right marketplace, tracking the provenance of product online, while maintaining pricing support, and release times of products, to prevent market saturation. The integrity of the brand is our core concern.
-			<br><a href='mailto:luxury@pickipicki.com' >luxury@pickipicki.com</a></p>
+        <p>Engage artisanal communities that surround your brand. Give new product and vendors a place to be tested and vetted by your users, without full branded access.
+			  </p>
 
       </div>
     </div>
@@ -145,32 +149,18 @@
     <div class="container">
       <div class="seper"></div>
       <div class='col-md-7' style='font-size:16px;'>
-        <h3 class="page__title" style='color:white;'>Marketplaces </h3>
-        <p>
-          <ul>
-            <li>Allow your users to buy and sell products to and from each other.</li>
-            <li>Merchandise that relates and encourages your brand's narrative. </li>
-            <li>Second hand merchandise, allowing you, the brand, to make a profit off of the full retail life cycle of your product, long after it leaves your shelves. </li>
-            <li>Engage artisanal communities that surround your brand. Give new product and vendors a place to be tested and vetted by your users, without full branded access.   </li>
-          </ul>
+        <h3 class="page__title" style='color:white;'>Integration </h3>
+        <p >
+          Integration is simple, we're a white label service:<br>
+          you brand the front end, we run the back-end.</p>
+          <p>
+          We provide a customized, fully scalable marketplace
+          that will take two weeks from start to finish to launch.
         </p>
       </div>
       <div class='col-md-5'>
         <img src="images/content__images/marketplace.jpg" alt="image" class="img-responsive no-margin full-width">
       </div>
-    </div>
-  </div>
-  <div class="titles aboutus text-left">
-    <div class="container">
-      <div class="seper"></div>
-      <h3 class="page__title" style='color:white;' >Integration</h3>
-      <p class="" style='color:white;' >
-        Integration is simple, we're a white label service:<br>
-        you brand the front end, we run the back-end.</p>
-        <p>
-        We provide a customized, fully scalable marketplace
-        that will take two weeks from start to finish to launch.
-      </p>
     </div>
   </div>
   <div class="row grey-info-block text-left">
@@ -194,7 +184,7 @@
       </div>
       <div class="col-md-6">
         <h4>Customer Success Team</h4>
-        <p>
+        <p class='grey-info-block-second-p'>
           Our goal is make your marketplace successful.
         </p>
         <img src="images/content__images/img3.jpg" alt="pic" class="img-rounded img-responsive" id="picture">
@@ -208,220 +198,77 @@
   </div>
   <div class="row line__bg">
           <!-- #contact -->
-	<div class="container contact-info" >
-    <div class='col-md-6'>
-		    <div class='mapdiv'>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3022.480228835733!2d-73.9865293!3d40.751461299999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259abd8e526b3%3A0x92b772a552ee69f2!2s989+Avenue+of+the+Americas%2C+New+York%2C+NY+10018!5e0!3m2!1sen!2sus!4v1391536127338" width="400" height="300" frameborder="0" style="border:0"></iframe>
-		      <address>
-		        <br>
-	          <strong>Picki Picki</strong><br>
-             989 Avenue of the Americas<br>
-             3rd floor<br>
-             New York, NY<br>
-             10018
-		      </address>
-		    </div>
-	   </div>
-	<div class='col-md-6'>
-			<div class='contactInformation' >
-				Contact Information
-			</div>
-
-			<a href="mailto:apparel@pickipicki.com">apparel@pickipicki.com</a><br>
-			<a href="mailto:ce@pickipicki.com">ce@pickipicki.com</a><br>
-			<a href="mailto:luxury@pickipicki.com">luxury@pickipicki.com</a><br>
-			<a href="mailto:info@pickipicki.com">info@pickipicki.com</a><br>
-
-
+  	<div class="container contact-info" >
+      <div class='col-md-6'>
+  		    <div class='mapdiv'>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3022.480228835733!2d-73.9865293!3d40.751461299999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259abd8e526b3%3A0x92b772a552ee69f2!2s989+Avenue+of+the+Americas%2C+New+York%2C+NY+10018!5e0!3m2!1sen!2sus!4v1391536127338" width="400" height="300" frameborder="0" style="border:0"></iframe>
+  		      <address>
+  		        <br>
+  	          <strong>Picki Picki</strong><br>
+               989 Avenue of the Americas<br>
+               3rd floor<br>
+               New York, NY<br>
+               10018
+  		      </address>
+  		    </div>
+  	   </div>
+    	<div class='col-md-6'>
+    			<h3 class='contactInformation' >
+    				Feel free to reach out to us
+    			</h3>
 
 <!-- Begin MailChimp Signup Form -->
-<br>
-<div id="mc_embed_signup">
-<form action="http://pickipicki.us3.list-manage.com/subscribe/post?u=1a3df1cf8126b898450bd2a30&amp;id=673cc0f5ce" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-</label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-</div>
-<div class="mc-field-group">
-	<label for="mce-FNAME">First Name </label>
-	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-</div>
-<div class="mc-field-group">
-	<label for="mce-LNAME">Last Name </label>
-	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-</div>
-<div class="mc-field-group">
-	<label for="mce-MMERGE3">Message </label>
-	<textarea  value="" name="MMERGE3" class="" rows="4"  id="mce-MMERGE3" maxlength="255" ></textarea>
-	<div class='info' >Max 255 Characters</div>
-</div>
+          <br>
+          <div id="mc_embed_signup">
+          <form action="http://forms.brace.io/info@pickipicki.com" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+          <div class="mc-field-group">
+          	<label for="_replyto">Email Address  <span class="asterisk">*</span>
+          </label>
+          	<input type="email" value="" name="_replyto" class="required email" id="_replyto">
+          </div>
+          <div class="mc-field-group">
+          	<label for="name">Name </label>
+          	<input type="text" value="" name="name" class="" id="name">
+          </div>
 
-  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;"><input type="text" name="b_1a3df1cf8126b898450bd2a30_673cc0f5ce" value=""></div>
-	<div class="clear"><input type="submit" value="Join Our Mailing List" name="subscribe" id="mc-embedded-subscribe" class="btn btn-purple"></div>
-  <div id="mce-responses" class="clear">
-    <div class="response" id="mce-error-response" style="display:none"></div>
-    <div class="response" id="mce-success-response" style="display:none"></div>
-  </div>
-</form>
-</div>
-
-<script type="text/javascript">
-var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='text';
-try {
-    var jqueryLoaded=jQuery;
-    jqueryLoaded=true;
-} catch(err) {
-    var jqueryLoaded=false;
-}
-var head= document.getElementsByTagName('head')[0];
-if (!jqueryLoaded) {
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = '//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
-    head.appendChild(script);
-    if (script.readyState && script.onload!==null){
-        script.onreadystatechange= function () {
-              if (this.readyState == 'complete') mce_preload_check();
-        }
-    }
-}
-
-var err_style = '';
-try{
-    err_style = mc_custom_error_style;
-} catch(e){
-    err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
-}
-var head= document.getElementsByTagName('head')[0];
-var style= document.createElement('style');
-style.type= 'text/css';
-if (style.styleSheet) {
-  style.styleSheet.cssText = err_style;
-} else {
-  style.appendChild(document.createTextNode(err_style));
-}
-head.appendChild(style);
-setTimeout('mce_preload_check();', 250);
-
-var mce_preload_checks = 0;
-function mce_preload_check(){
-    if (mce_preload_checks>40) return;
-    mce_preload_checks++;
-    try {
-        var jqueryLoaded=jQuery;
-    } catch(err) {
-        setTimeout('mce_preload_check();', 250);
-        return;
-    }
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
-    head.appendChild(script);
-    try {
-        var validatorLoaded=jQuery("#fake-form").validate({});
-    } catch(err) {
-        setTimeout('mce_preload_check();', 250);
-        return;
-    }
-    mce_init_form();
-}
-function mce_init_form(){
-    jQuery(document).ready( function($) {
-      var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
-      var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
-      $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
-      options = { url: 'http://pickipicki.us3.list-manage.com/subscribe/post-json?u=1a3df1cf8126b898450bd2a30&id=673cc0f5ce&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
-                    beforeSubmit: function(){
-                        $('#mce_tmp_error_msg').remove();
-
-                        return mce_validator.form();
-                    },
-                    success: mce_success_cb
-                };
-      $('#mc-embedded-subscribe-form').ajaxForm(options);
+          <div class="mc-field-group">
+          	<label for="message">Message </label>
+          	<textarea  value="" name="message" class="" rows="4"  id="message" maxlength="255" ></textarea>
+          	<div class='info' >Max 255 Characters</div>
+          </div>
 
 
-    });
-}
-function mce_success_cb(resp){
-    $('#mce-success-response').hide();
-    $('#mce-error-response').hide();
-    if (resp.result=="success"){
-        $('#mce-'+resp.result+'-response').show();
-        $('#mce-'+resp.result+'-response').html(resp.msg);
-        $('#mc-embedded-subscribe-form').each(function(){
-            this.reset();
-    	});
-    } else {
-        var index = -1;
-        var msg;
-        try {
-            var parts = resp.msg.split(' - ',2);
-            if (parts[1]==undefined){
-                msg = resp.msg;
-            } else {
-                i = parseInt(parts[0]);
-                if (i.toString() == parts[0]){
-                    index = parts[0];
-                    msg = parts[1];
-                } else {
-                    index = -1;
-                    msg = resp.msg;
-                }
-            }
-        } catch(e){
-            index = -1;
-            msg = resp.msg;
-        }
-        try{
-            if (index== -1){
-                $('#mce-'+resp.result+'-response').show();
-                $('#mce-'+resp.result+'-response').html(msg);
-            } else {
-                err_id = 'mce_tmp_error_msg';
-                html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;">
+                <input type="text" name="b_1a3df1cf8126b898450bd2a30_673cc0f5ce" value="">
+                <input type="hidden" name="_subject" id="_subject" value="Message from pickipicki.com" />
+              </div>
+          	<div class="clear"><input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="btn btn-purple"></div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+          </form>
+          </div>
 
-                var input_id = '#mc_embed_signup';
-                var f = $(input_id);
-                if (ftypes[index]=='address'){
-                    input_id = '#mce-'+fnames[index]+'-addr1';
-                    f = $(input_id).parent().parent().get(0);
-                } else if (ftypes[index]=='date'){
-                    input_id = '#mce-'+fnames[index]+'-month';
-                    f = $(input_id).parent().parent().get(0);
-                } else {
-                    input_id = '#mce-'+fnames[index];
-                    f = $().parent(input_id).get(0);
-                }
-                if (f){
-                    $(f).append(html);
-                    $(input_id).focus();
-                } else {
-                    $('#mce-'+resp.result+'-response').show();
-                    $('#mce-'+resp.result+'-response').html(msg);
-                }
-            }
-        } catch(e){
-            $('#mce-'+resp.result+'-response').show();
-            $('#mce-'+resp.result+'-response').html(msg);
-        }
-    }
-}
+          <!--End mc_embed_signup-->
 
-</script>
-<!--End mc_embed_signup-->
+	    </div>
 
-	</div>
-  <div class='col-md-12'>
-    <h3>We're Hiring</h3>
-    <p>
-      We're building out both our technical and customer success teams.  Email your resume and cover letter to <a href="mailto:info@pickipicki.com" >info@pickipicki.com</a>
-    </p>
-  </div>
 
 </div>   <!-- End Contact -->
+  </div>
+  <div class="titles aboutus text-left">
+    <div class="container">
+      <div class="seper"></div>
+      <div class='col-md-12'>
+        <h3 style='color:white;' >We're Hiring</h3>
+        <p>
+          We're building out both our technical and customer success teams.  Email your resume and cover letter to <a href="mailto:info@pickipicki.com" >info@pickipicki.com</a>
+        </p>
+      </div>
+
+    </div>
   </div>
 </section>
 <footer style='display:none;'>
@@ -493,5 +340,107 @@ $( "ul li.dropdown ul" ).slideToggle( "normal", function() {
 $('ul li.dropdown').toggleClass('current');
 });
 </script>
+<script type="text/javascript">
+var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='text';
+try {
+    var jqueryLoaded=jQuery;
+    jqueryLoaded=true;
+} catch(err) {
+    var jqueryLoaded=false;
+}
+var head= document.getElementsByTagName('head')[0];
+if (!jqueryLoaded) {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = '//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
+    head.appendChild(script);
+    if (script.readyState && script.onload!==null){
+        script.onreadystatechange= function () {
+              if (this.readyState == 'complete') mce_preload_check();
+        }
+    }
+}
+
+var err_style = '';
+try{
+    err_style = mc_custom_error_style;
+} catch(e){
+    err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
+}
+var head= document.getElementsByTagName('head')[0];
+var style= document.createElement('style');
+style.type= 'text/css';
+if (style.styleSheet) {
+  style.styleSheet.cssText = err_style;
+} else {
+  style.appendChild(document.createTextNode(err_style));
+}
+head.appendChild(style);
+setTimeout('mce_preload_check();', 250);
+
+var mce_preload_checks = 0;
+function mce_preload_check(){
+    if (mce_preload_checks>40) return;
+    mce_preload_checks++;
+    try {
+        var jqueryLoaded=jQuery;
+    } catch(err) {
+        setTimeout('mce_preload_check();', 250);
+        return;
+    }
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
+    head.appendChild(script);
+    try {
+        var validatorLoaded=jQuery("#fake-form").validate({});
+    } catch(err) {
+        setTimeout('mce_preload_check();', 250);
+        return;
+    }
+    mce_init_form();
+}
+function mce_init_form(){
+    jQuery(document).ready( function($) {
+      var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
+      var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
+      $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
+      options = { url: '//forms.brace.io/info@pickipicki.com', method: 'POST', dataType: 'json', contentType: "application/json; charset=utf-8",
+                    data: $('#mc-embedded-subscribe-form').serializeArray(),
+                    beforeSubmit: function(){
+                        $('#mce_tmp_error_msg').remove();
+
+
+
+                        var ret =  mce_validator.form();
+                        return ret;
+                    },
+                    success: mce_success_cb,
+                    failure: function(param){
+                      alert(param);
+                    }
+                };
+      $('#mc-embedded-subscribe').click(function(){
+          $.ajax(
+            options
+          );
+      });
+
+
+
+
+    });
+}
+function mce_success_cb(resp){
+    $('#mce-error-response').hide();
+    $('#mce-success-response').show();
+    $('#mce-success-response').html("Success!");
+
+
+
+}
+
+</script>
+
 </body>
 </html>
