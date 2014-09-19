@@ -1808,6 +1808,6 @@ h1.page_title {
 .contact-info .info{
 	margin-left: 129px;
 }
-.contact-info .btn#mc-embedded-subscribe{
+.contact-info .btn#mc-embedded-subscribe, .contact-info #mce-success-response{
 	margin-left:124px;
 }

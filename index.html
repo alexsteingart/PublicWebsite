@@ -346,22 +346,6 @@ $('ul li.dropdown').toggleClass('current');
       //var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
       //var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
       //$("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
-      options = { url: '//forms.brace.io/info@pickipicki.com',
-                    method: 'POST',
-                    dataType: 'json',
-                    //contentType: "application/json; charset=utf-8",
-                    data: $('#mc-embedded-subscribe-form').serializeArray(),
-
-                    success: mce_success_cb,
-                    failure: function(param){
-                      //alert(param);
-                    },
-                    complete: function(param){
-                      //alert(param);
-                      //mce_success_cb();
-                    }
-
-                };
       $('#mc-embedded-subscribe').click(function(){
           if($('#b_1a3df1cf8126b898450bd2a30_673cc0f5ce').val()){
             return false;
@@ -369,6 +353,22 @@ $('ul li.dropdown').toggleClass('current');
             $('#b_1a3df1cf8126b898450bd2a30_673cc0f5ce').remove();
 
           }
+      var options = { url: '//forms.brace.io/info@pickipicki.com',
+                    method: 'POST',
+                    dataType: 'json',
+                    //contentType: "application/json; charset=utf-8",
+                    data: $('#mc-embedded-subscribe-form').serializeArray(),
+
+                    //success: mce_success_cb,
+                    failure: function(param){
+                      //alert(param);
+                    },
+                    complete: function(param){
+                      //alert(param);
+                      mce_success_cb();
+                    }
+
+                };
           $.ajax('http://forms.brace.io/info@pickipicki.com',
             options
           );
@@ -383,7 +383,7 @@ $('ul li.dropdown').toggleClass('current');
 function mce_success_cb(resp){
     $('#mce-error-response').hide();
     $('#mce-success-response').show();
-    $('#mce-success-response').html("Success!");
+    $('#mce-success-response').html("<span style='color:blue;font-weight:bold;'>Success!</span>");
 
 
 
