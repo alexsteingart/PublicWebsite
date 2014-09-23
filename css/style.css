@@ -406,19 +406,21 @@ ul.dropdown-menu>li>a:hover {
 .slider .btn {
 	margin: 0px 15px 0 0;
 }
+.main__header{
+	display: none;
+}
 .carousel-caption {
-	top: 34%;
-	margin-top: -250px;
+	top: 0px;
 	font-size: 24px;
-	text-align: left;
+	text-align: center;
 	color: #fff;
 	text-transform: none;
+	width: 55%;
 }
 .carousel-caption h1 {
 	font-size: 60px;
 	line-height: 60px;
 	text-transform: lowercase;
-	font-weight: bold;
 	text-align: left;
 	color: #fff;
 }
@@ -426,7 +428,7 @@ ul.dropdown-menu>li>a:hover {
 	text-shadow: 1px 1px 3px #666666;
 	text-align: left;
 	color: #e0e0e0;
-	font-size: 18px;
+	font-size: 20px;
 	text-transform: none;
 	font-weight: 400;
 	margin: 35px 0 20px 0;
@@ -449,12 +451,14 @@ ul.dropdown-menu>li>a:hover {
 	width: 57px;
 	height: 57px;
 	left: 25px;
+	display: none;
 }
 .carousel-control .carousel-control-right {
 	background: url('../images/slider/next.png') no-repeat;
 	width: 57px;
 	height: 57px;
 	right: 25px;
+	display: none;
 }
 .carousel-control .carousel-control-left:hover {
 	background: url('../images/slider/prev_a.png') no-repeat;
@@ -762,6 +766,7 @@ img.full-width {
 }
 .three__blocks .container h3 {
 	color: #fff;
+	padding-bottom: 15px;
 }
 .three__blocks .container h3 a {
 	color: #fff;
@@ -1031,7 +1036,8 @@ footer button.btn-primary:focus {
 	padding-right: 0px !important;
 }
 .carousel-caption .logo {
-	height: 240px;
+	height: 200px;
+	margin-bottom: 20px;
 }
 .mobile-subtitle{
 	display: none;
@@ -1049,11 +1055,14 @@ input, textarea{
 @media(max-width:1310px) {
 .carousel-caption {
 	font-size: 14px;
-	top: 41%;
+	top: 0px;
+	left: 5%;
 }
 .carousel-caption h1 {
 	font-size: 30px;
 	line-height: 40px;
+	font-weight: normal;
+	text-transform: none;
 }
 .slider .btn {
 	margin: 0 10px;
@@ -1080,9 +1089,9 @@ input, textarea{
 }
 .carousel-caption {
 	font-size: 13px;
-	top: 34%;
-	margin-top: -110px;
-	left: 15%;
+	top: 0px;
+	margin-top: 0px;
+	left: 5%;
 	right: 15%;
 }
 .carousel-caption h1 {
@@ -1094,6 +1103,7 @@ input, textarea{
 }
 .carousel-caption p {
 	margin: 10px 0;
+	font-size: 18px;
 }
 .boxess .carousel-caption h1 {
 	font-size: 20px;
@@ -1214,7 +1224,7 @@ header.with-boxed {
 	background-size: 100% 100%;
 }
 .carousel-caption .logo{
-	display: none;
+	height: 140px;
 }
 .carousel-caption h1{
 	line-height: 20px;
@@ -1225,9 +1235,20 @@ header.with-boxed {
 .slider .btn {
 	display: none;
 }
+.carousel-caption .logo{
+	height: 120px !important;
+	display: none;
+}
+.carousel-caption h1{
+	line-height: 20px;
+
+}
 }
 @media(max-width:550px) {
 .carousel-caption h1 {
+
+}
+.carousel-caption .logo {
 	display: none;
 }
 .carousel-caption p{
@@ -1240,6 +1261,15 @@ header.with-boxed {
 }
 .mobile-subtitle{
 	display: block;
+}
+.main__header{
+	display: block;
+}
+.submenu{
+	display: none !important;
+}
+#myCarousel{
+	top: 81px;
 }
 }
 .carousel-fade {
@@ -1535,7 +1565,7 @@ a.submenu:hover {
 }
 @media(max-width: 845px) {
 	.carousel-caption .logo{
-		height: 200px;
+		height: 160px;
 	}
 
 }
@@ -1605,7 +1635,7 @@ h1.page_title {
 	line-height: normal;
 }
 .carousel-caption .logo{
-	height: 165px;
+	height: 140px;
 }
 
 .carousel-control span {
@@ -1651,7 +1681,7 @@ h1.page_title {
 	display: block !important;
 }
 .carousel-caption {
-	top: 90px;
+	top: 0px;
 }
 .carousel-caption a.btn {
 	display: none;
@@ -1786,7 +1816,7 @@ h1.page_title {
 	margin-top: 0px;
 	color: #333;
 	padding: 0px;
-	width: 60%
+	width: 100%
 }
 .contact-info{
 	color: black;
@@ -1798,7 +1828,7 @@ h1.page_title {
 	margin-bottom:10px;
 }
 .contact-info label{
-	width: 126px;
+	width: 118px;
 	padding-right: 16px;
 	text-align:right;
 }
