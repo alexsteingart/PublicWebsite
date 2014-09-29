@@ -1828,7 +1828,7 @@ h1.page_title {
 	margin-bottom:10px;
 }
 .contact-info label{
-	width: 118px;
+	width: 126px;
 	padding-right: 16px;
 	text-align:right;
 }
@@ -1837,6 +1837,10 @@ h1.page_title {
 }
 .contact-info .info{
 	margin-left: 129px;
+}
+.contact-info .btn#mc-embedded-subscribe{
+        background-color: #FA3A28;
+        color: white;
 }
 .contact-info .btn#mc-embedded-subscribe, .contact-info #mce-success-response{
 	margin-left:124px;
